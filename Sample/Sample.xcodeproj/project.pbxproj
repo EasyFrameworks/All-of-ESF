@@ -36,6 +36,9 @@
 		EDFB2ADA1946DD3E008E1DBF /* ESGridViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EDFB2AD61946DD3E008E1DBF /* ESGridViewCell.m */; };
 		EDFB2ADB1946DD3E008E1DBF /* ESGridViewLayoutStrategies.m in Sources */ = {isa = PBXBuildFile; fileRef = EDFB2AD81946DD3E008E1DBF /* ESGridViewLayoutStrategies.m */; };
 		EDFB2ADE1946DF25008E1DBF /* ESGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDFB2ADD1946DF25008E1DBF /* ESGridViewController.m */; };
+		EDFB2AE21947D593008E1DBF /* ESDebugViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDFB2AE11947D593008E1DBF /* ESDebugViewController.m */; };
+		EDFB2AED1947E3AB008E1DBF /* Log.m in Sources */ = {isa = PBXBuildFile; fileRef = EDFB2AEC1947E3AB008E1DBF /* Log.m */; };
+		EDFB2AF01947EE1D008E1DBF /* LogC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EDFB2AEE1947EE1D008E1DBF /* LogC.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +105,12 @@
 		EDFB2AD81946DD3E008E1DBF /* ESGridViewLayoutStrategies.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESGridViewLayoutStrategies.m; sourceTree = "<group>"; };
 		EDFB2ADC1946DF25008E1DBF /* ESGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESGridViewController.h; sourceTree = "<group>"; };
 		EDFB2ADD1946DF25008E1DBF /* ESGridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESGridViewController.m; sourceTree = "<group>"; };
+		EDFB2AE01947D593008E1DBF /* ESDebugViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESDebugViewController.h; sourceTree = "<group>"; };
+		EDFB2AE11947D593008E1DBF /* ESDebugViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESDebugViewController.m; sourceTree = "<group>"; };
+		EDFB2AEB1947E3AB008E1DBF /* Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Log.h; sourceTree = "<group>"; };
+		EDFB2AEC1947E3AB008E1DBF /* Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Log.m; sourceTree = "<group>"; };
+		EDFB2AEE1947EE1D008E1DBF /* LogC.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LogC.cpp; sourceTree = "<group>"; };
+		EDFB2AEF1947EE1D008E1DBF /* LogC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogC.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +229,7 @@
 		EDFB2A89194690FE008E1DBF /* ESFrameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EDFB2ADF1947D57E008E1DBF /* ESDebug */,
 				EDFB2AD11946DD3E008E1DBF /* ESGridView */,
 				EDFB2AC01946DD0A008E1DBF /* ESImage */,
 				EDFB2A8A194690FE008E1DBF /* Network */,
@@ -273,6 +283,19 @@
 				EDFB2AD81946DD3E008E1DBF /* ESGridViewLayoutStrategies.m */,
 			);
 			path = ESGridView;
+			sourceTree = "<group>";
+		};
+		EDFB2ADF1947D57E008E1DBF /* ESDebug */ = {
+			isa = PBXGroup;
+			children = (
+				EDFB2AE01947D593008E1DBF /* ESDebugViewController.h */,
+				EDFB2AE11947D593008E1DBF /* ESDebugViewController.m */,
+				EDFB2AEB1947E3AB008E1DBF /* Log.h */,
+				EDFB2AEC1947E3AB008E1DBF /* Log.m */,
+				EDFB2AEE1947EE1D008E1DBF /* LogC.cpp */,
+				EDFB2AEF1947EE1D008E1DBF /* LogC.h */,
+			);
+			path = ESDebug;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -378,14 +401,17 @@
 				EDFB2AAE1946A67A008E1DBF /* ESNetworkViewController.m in Sources */,
 				EDFB2ACC1946DD0A008E1DBF /* ESAnimation.m in Sources */,
 				EDFB2ACF1946DD0A008E1DBF /* ImageManager.m in Sources */,
+				EDFB2AED1947E3AB008E1DBF /* Log.m in Sources */,
 				EDFB2AD01946DD0A008E1DBF /* ImageOperation.m in Sources */,
 				EDFB2ACD1946DD0A008E1DBF /* ESImage.m in Sources */,
+				EDFB2AE21947D593008E1DBF /* ESDebugViewController.m in Sources */,
 				EDFB2AD91946DD3E008E1DBF /* ESGridView.m in Sources */,
 				EDFB2ADE1946DF25008E1DBF /* ESGridViewController.m in Sources */,
 				EDFB29FF19468E78008E1DBF /* main.m in Sources */,
 				EDFB2ACE1946DD0A008E1DBF /* ESImageView.m in Sources */,
 				EDFB2ADB1946DD3E008E1DBF /* ESGridViewLayoutStrategies.m in Sources */,
 				EDFB2A95194690FE008E1DBF /* ESNetworkRestfulOperaton.m in Sources */,
+				EDFB2AF01947EE1D008E1DBF /* LogC.cpp in Sources */,
 				EDFB2A0319468E78008E1DBF /* ESFAppDelegate.m in Sources */,
 				EDFB2A4F19468FE9008E1DBF /* SampleViewController.m in Sources */,
 				EDFB2A96194690FE008E1DBF /* ESOperation.m in Sources */,
